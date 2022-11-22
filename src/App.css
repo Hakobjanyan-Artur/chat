@@ -1,0 +1,19 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.Corpus{
+    max-width: 900px;
+    min-width: 350px;
+    height: 570px;
+    background: #151a28;
+    transition: .6s;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}

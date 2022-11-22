@@ -1,0 +1,62 @@
+.desctop {
+    width: 95%;
+    height: 400px;
+    overflow: hidden;
+    overflow-y: auto;
+    background: #272f44;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #000 inset;
+}
+.desctop .mes {
+    width: 200px;
+    min-height: 50px;
+    text-align: center;
+    overflow: hidden;
+    word-wrap: break-word;
+    box-shadow: 0 0 15px #000;
+    position: relative;
+    margin-top: 10px;
+}
+.desctop .mes .user{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+}
+.desctop .mes .mesTxt {
+    color: #fff;
+}
+.desctop .mes .del-edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    top: 7px;
+    opacity: 0;
+    transition: .3s;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #272f44;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #4c5366;
+}
+.desctop .mes:hover .del-edit{
+    opacity: 1;
+}
+.desctop .mes .del-edit button {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
